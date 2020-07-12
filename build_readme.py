@@ -10,7 +10,7 @@ root = pathlib.Path(__file__).parent.resolve()
 client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
 
-TOKEN = os.environ.get("SIMONW_TOKEN", "9efcfd4e6b78a261dac27e6bc675744a26d2d0fd")
+TOKEN = os.environ.get("SIMONW_TOKEN", "")
 
 
 def replace_chunk(content, marker, chunk, inline=False):
@@ -118,7 +118,8 @@ if __name__ == "__main__":
     readme = root / "README.md"
     project_releases = root / "releases.md"
     print(TOKEN)
-    releases = fetch_releases(TOKEN)
+    #releases = fetch_releases(TOKEN)
+    releases = fetch_releases("23b4bc39d76d171fe9df6cb087610661b71b3ec9")
     releases.sort(key=lambda r: r["published_at"], reverse=True)
     md = "\n".join(
         [
