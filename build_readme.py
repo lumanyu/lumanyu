@@ -119,7 +119,7 @@ if __name__ == "__main__":
     project_releases = root / "releases.md"
     print(TOKEN)
     #releases = fetch_releases(TOKEN)
-    releases = fetch_releases("23b4bc39d76d171fe9df6cb087610661b71b3ec9")
+    releases = fetch_releases("e5d4a1d6b4b17a131e16d3692d48bcb8d581b148")
     releases.sort(key=lambda r: r["published_at"], reverse=True)
     md = "\n".join(
         [
