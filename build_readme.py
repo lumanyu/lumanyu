@@ -10,7 +10,7 @@ root = pathlib.Path(__file__).parent.resolve()
 client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
 
-TOKEN = os.environ.get("SIMONW_TOKEN", "")
+TOKEN = os.environ.get("SIMONW_TOKEN", "9efcfd4e6b78a261dac27e6bc675744a26d2d0fd")
 
 
 def replace_chunk(content, marker, chunk, inline=False):
