@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+Hello everyone. Glad to see you here! The below is my self-introduction:
+
 <!--
 **lumanyu/lumanyu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
