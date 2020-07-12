@@ -118,8 +118,7 @@ if __name__ == "__main__":
     readme = root / "README.md"
     project_releases = root / "releases.md"
     print(TOKEN)
-    #releases = fetch_releases(TOKEN)
-    releases = fetch_releases("ccda9774854c6a4343597c51117438204837d7b2")
+    releases = fetch_releases(TOKEN)
     releases.sort(key=lambda r: r["published_at"], reverse=True)
     md = "\n".join(
         [
